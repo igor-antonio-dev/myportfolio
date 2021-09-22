@@ -153,6 +153,33 @@ header {
   animation: moveBanner 1s 0.7s forwards;
 }
 
+.banner5 h1 {
+  
+  
+  font-size: 1.3rem;
+  
+  margin-bottom: 2rem;
+  
+  
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+              rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
+}
+
+
+
+
 
 .banner button {
   font-family: var(--font-action);
@@ -201,7 +228,16 @@ header {
 .banner2 p {
   font-family: var(--font-secundary);
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.3rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: moveBanner 1s 0.7s forwards;
+}
+.banner7 p{
+  font-family: var(--font-secundary);
+  color: #fff;
+  font-size: 1.3rem;
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   opacity: 0;
