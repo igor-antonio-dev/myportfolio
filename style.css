@@ -130,17 +130,17 @@ header {
   line-height: 3.5rem;
   margin-bottom: 2rem;
   opacity: 0;
-  animation: moveBanner 1s 0.5s forwards;
+  animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner p {
   font-family: var(--font-secundary);
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   opacity: 0;
-  animation: moveBanner 1s 0.7s forwards;
+  animation: moveBanner 1s 0.6s forwards;
 }
 
 .banner1 p {
@@ -150,91 +150,66 @@ header {
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   opacity: 0;
-  animation: moveBanner 1s 0.7s forwards;
+  animation: moveBanner 1s 0.5s forwards;
 }
 .sobrefoto{
     position: relative;
     display: flex;
-    left: -30%;
+    justify-content:center;   
 }
-.sobrebutton{
-  font-family: var(--font-action);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  background: #6a3093;
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  background: linear-gradient(to left, #a044ff, #6a3093);
-  padding: 0.3rem 0.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0;
-  animation: moveBanner 1s 0.9s forwards;
-  position: absolute;
-  top: 150%;
-  left: 30%;
-}
-.sobrebutton1{
-  font-family: var(--font-action);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  background: #6a3093;
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  background: linear-gradient(to left, #a044ff, #6a3093);
-  padding: 0.3rem 0.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0;
-  animation: moveBanner 1s 0.9s forwards;
-  position: absolute;
-  top: 150%;
-  left: 40%;
-}
-.sobrebutton2{
-  font-family: var(--font-action);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  background: #6a3093;
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  background: linear-gradient(to left, #a044ff, #6a3093);
-  padding: 0.3rem 0.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0;
-  animation: moveBanner 1s 0.9s forwards;
-  position: absolute;
-  top: 150%;
-  left: 48%;
-}
-
 
 .sobrefont{
-  position: relative;
+  justify-content:center; 
   font-family: var(--font-secundary);
   color:#4b4b4b;
   font-size: 1.3rem;
-  left: 130px;
-  top:-150px;
-  
-
   margin-bottom: 2rem;
   opacity: 0;
   animation: moveBanner 1s 0.7s forwards;
 }
+  
+.sobrelinks{
+  justify-content: center; 
+  display: flex; 
+}
+.pisca{
+  animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pisca;
+}
+.maquina-escrever{
+  content: "|";
+  color: #4b4b4b;
+  margin-left: 5px;
+  opacity: 1;
+  -webkit-animation: pisca 1s infinite;
+  animation: pisca 1s infinite;
+  animation-duration: 1s;
+}
+.maquina-escrever:after{
+  content: "|";
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+  opacity: 1;
+  -webkit-animation: pisca 1s infinite;
+  animation: pisca 1s infinite;
+  animation-duration: 1s;  
+}
 
+.larguraMaxContainer{
+  padding:100px 50px;
+  max-width: 1281px;
+}
+.sobreMin{
+  display: flex;
+}
 .banner5 h1 {
-  
-  
   font-size: 1.3rem;
-  
   margin-bottom: 2rem;
-  
-  
   background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
               rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
   background-size: 600vw 600vw;
@@ -250,10 +225,6 @@ header {
     background-position-x: 600vw;
   }
 }
-
-
-
-
 
 .banner button {
   font-family: var(--font-action);
@@ -509,6 +480,12 @@ header {
 }
 
 .projetos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.sobre {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2rem;
