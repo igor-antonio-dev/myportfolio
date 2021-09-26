@@ -159,6 +159,7 @@ header {
 }
 
 .sobrefont{
+  margin-top: 2em;
   justify-content:center; 
   font-family: var(--font-secundary);
   color:#4b4b4b;
@@ -171,6 +172,7 @@ header {
 .sobrelinks{
   justify-content: center; 
   display: flex; 
+  margin-top: -7em;
 }
 .pisca{
   animation-timing-function: ease;
@@ -619,7 +621,9 @@ header {
 
 .input-group {
   position: relative;
+  
 }
+
 
 .field {
   background: transparent;

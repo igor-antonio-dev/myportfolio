@@ -27,3 +27,15 @@ function atualizarPreco(){
     document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
 }
 
+//Copy
+document.querySelector("button").addEventListener("click",
+  function (event) {
+    var textRange = document.createRange()
+    textRange.selectNode(document.getElementById("chave"))
+    window.getSelection().removeAllRanges()
+    window.getSelection().addRange(textRange)
+    document.execCommand("copy")
+    window.getSelection().removeAllRanges()
+    document.querySelector("button").innerText = 'Copiado!'
+})
+
