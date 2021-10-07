@@ -454,25 +454,10 @@ header {
   background-color: #a044ff;
 }
 
-.social-media1 {
-  position: absolute;
-  bottom: -10rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-@media(max-width: 425px){
-  .social-media1{
-    width: 50%;
-  }
-}
-
 .social-media1 i {
-  
   color: rgba(255, 255, 255, 1);
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.0rem;
+  width: 2.0rem;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -485,21 +470,11 @@ header {
   background-color: #a044ff;
 }
 
-.social-media2 {
-  position: absolute;
-  bottom: -15rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly
-  ;
-}
-
 .social-media2 i {
-  
   color: rgba(255, 255, 255, 1);
   height: 2.5rem;
   width: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,7 +489,7 @@ header {
 .conhecimentos {
   display: flex;
   justify-content: center;
-  margin-left: 6em;
+  margin-left: 9em;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -722,7 +697,7 @@ header {
 }
 
 .sessao-contato {
-  margin-top: -5em;
+  margin-top: -12em;
   width: 100%;
   height: 100vh;
   background-color: #FFFFFF;
@@ -747,7 +722,8 @@ header {
 
 .contato-right {
   display: flex;
-  width: 65%;
+  justify-content: center;
+  width: 100%;
   background-color: #eee;
   padding: 1rem 3rem 3rem 3rem;
 }
@@ -757,7 +733,7 @@ header {
   
 }
 
-@media (max-width: 856px){
+@media (max-width: 1024px){
   .imgcttleft{
     display: block;
     display: none;
@@ -805,7 +781,7 @@ header {
 
 .input-group {
   position: absolute;
-  margin-left: -220px;
+  max-width: 50%;
   margin-top: 2em;
 }
 
@@ -826,7 +802,6 @@ header {
 }
 
 .input-group a{
-  width: 60%;
   font-family: 'Montserrat', sans-serif;
   margin-top: 2em;
   justify-content: center;
