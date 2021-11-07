@@ -653,13 +653,13 @@ header {
 
 .card-info h2 {
   font-family: var(--font-primary);
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   font-weight: 500;
   color: #eee;
 }
 
 .card-info h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: var(--font-action);
   font-weight: bolder;
   color: #6a3093;
@@ -669,7 +669,7 @@ header {
 .card-info p {
   font-family: var(--font-secundary);
   color: #eee;
-  font-weight: 400;
+  font-weight: 200;
   width: 80%;
   margin-bottom: 2rem;
 }
@@ -686,7 +686,7 @@ header {
 }
 
 .card-info button {
-  width: 6rem;
+  width: 5rem;
   height: 2.5rem;
 }
 
@@ -796,6 +796,12 @@ header {
   }
 }
 
+@media(max-width: 425px){
+  .input-group a{
+    font-size: 15px;
+  }
+}
+
 .input-group span{
   font-family: 'Montserrat', sans-serif;
   margin-top: 2em;
@@ -804,6 +810,7 @@ header {
 .input-group a{
   font-family: 'Montserrat', sans-serif;
   margin-top: 2em;
+
   justify-content: center;
 }
 
