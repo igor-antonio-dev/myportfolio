@@ -458,7 +458,7 @@ header {
   color: rgba(255, 255, 255, 1);
   height: 1.0rem;
   width: 2.0rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,64 +486,47 @@ header {
   background-color: #a044ff;
 }
 
-.conhecimentos {
+.front{
+  margin-left: -280px;
+  justify-content: start;
+}
+
+.design{
+  margin-left: 180px;
+  margin-top: -125px;
+}
+
+.back{
+  margin-left: -280px;
+}
+
+.mobile{
+  margin-left: 180px;
+  margin-top: -125px;
+}
+
+.conhecimento-front {
   display: flex;
+  height: 100%;
   justify-content: center;
-  margin-left: 9em;
+}
+
+.conhecimento-design {
+  display: flex;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(6, 6rem);
-  row-gap: 0.5rem;
+  justify-content: center;
 }
 
-.conhecimento:nth-child(1) {
-  grid-column: 1 / 7;
-  grid-row: 2 / 3;
-}
-
-.conhecimento:nth-child(2) {
-  grid-column: 1 / 7;
-  grid-row: 4 / 5;
-}
-
-.conhecimento:nth-child(3) {
-  grid-column: 4 / 7;
-  grid-row: 6 / -1;
-}
-
-.conhecimento:nth-child(4) {
-  grid-column: 13 / 14;
-  grid-row: 2 / 3;
-}
-
-.conhecimento:nth-child(5) {
-  grid-column: 13 / 14;
-  grid-row: 4 / 5;
-}
-
-.conhecimento:nth-child(6) {
-  grid-column: 13 / 14;
-  grid-row: 5 / -1;
-}
-.conhecimento:nth-child(7) {
-  grid-column: 4 / 13;
-  grid-row: 1 / -1;
-}
-.conhecimento:nth-child(8) {
-  grid-column: 4 / 13;
-  grid-row: 3 / -1;
-}
-.conhecimento:nth-child(9) {
-  grid-column: 4 / 13;
-  grid-row: 5 / -1;
-}
-
-.sessao-conhecimentos {
-  margin-top: 2em;
-  margin-bottom: -7em;
-  background-color: #FFFFFF;
+.conhecimento-back {
+  display: flex;
   height: 100%;
+  justify-content: center;
+}
+
+.conhecimento-mobile {
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 .sessao-header {
@@ -568,8 +551,10 @@ header {
 }
 
 .conhecimento-header i {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
 }
+
+
 
 .conhecimento-header h3 {
   font-family: var(--font-secundary);
@@ -697,7 +682,7 @@ header {
 }
 
 .sessao-contato {
-  margin-top: -12em;
+  margin-top: -14em;
   width: 100%;
   height: 100vh;
   background-color: #FFFFFF;
@@ -722,6 +707,7 @@ header {
 
 .contato-right {
   display: flex;
+  position: static;
   justify-content: center;
   width: 100%;
   background-color: #eee;
@@ -796,12 +782,6 @@ header {
   }
 }
 
-@media(max-width: 425px){
-  .input-group a{
-    font-size: 15px;
-  }
-}
-
 .input-group span{
   font-family: 'Montserrat', sans-serif;
   margin-top: 2em;
@@ -810,7 +790,7 @@ header {
 .input-group a{
   font-family: 'Montserrat', sans-serif;
   margin-top: 2em;
-
+  font-size: 0.65em;
   justify-content: center;
 }
 
