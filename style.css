@@ -554,8 +554,6 @@ header {
   font-size: 2.0rem;
 }
 
-
-
 .conhecimento-header h3 {
   font-family: var(--font-secundary);
   font-size: 2rem;
@@ -682,13 +680,11 @@ header {
 }
 
 .sessao-contato {
-  margin-top: -5em;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-color: #FFFFFF;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 .contato-wrapper {
@@ -716,7 +712,6 @@ header {
 
 .contato-left{
   display: flex;
-  
 }
 
 @media (max-width: 1024px){
@@ -790,7 +785,7 @@ header {
 .input-group a{
   font-family: 'Montserrat', sans-serif;
   margin-top: 2em;
-  font-size: 0.65em;
+  font-size: 0.85em;
   justify-content: center;
 }
 
@@ -918,6 +913,7 @@ footer{
   background-color: #17181b;
   display: flex;
   justify-content: center;
+  position: absolute;
   align-items: center;
 }
 
