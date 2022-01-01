@@ -1,4 +1,4 @@
-# myportfolio
+# portfolio
 
 Repository for developer projects demonstration
 
