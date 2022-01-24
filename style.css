@@ -641,8 +641,9 @@ header {
 }
 
 .card-info button {
-  width: 4.5rem;
+  width: 4.2rem;
   height: 2.3rem;
+  margin-left: -0.3em;
 }
 
 .card:hover .card-info {
