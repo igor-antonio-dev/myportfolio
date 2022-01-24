@@ -432,8 +432,8 @@ header {
   width: 2.0rem;
   font-size: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   border-radius: 50%;
   transition: background-color 1s;
 }
@@ -641,8 +641,8 @@ header {
 }
 
 .card-info button {
-  width: 5rem;
-  height: 2.5rem;
+  width: 4.5rem;
+  height: 2.3rem;
 }
 
 .card:hover .card-info {
